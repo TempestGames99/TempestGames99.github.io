@@ -27,7 +27,8 @@ body {
   font: 16px/1.65 var(--body); -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
-img { max-width: 100%; display: block; }
+/* Pictures keep their shape at any width: only ones told to fill a box (object-fit) set a height. */
+img { max-width: 100%; height: auto; display: block; }
 a { color: var(--accent-2); }
 :focus-visible { outline: 3px solid var(--accent-2); outline-offset: 3px; border-radius: 6px; }
 .wrap { max-width: var(--wide); margin: 0 auto; padding: 0 20px; }
@@ -229,6 +230,10 @@ footer.site a:hover { color: var(--text); }
 @media (max-width: 860px) {
   .about, .about-game { grid-template-columns: 1fr; }
   .facts { position: static; }
+}
+/* Portrait phones and tablets: the art on top, the words under it. Held sideways, a phone keeps
+   the wide layout below instead, which suits a short, wide screen. */
+@media (max-width: 860px) and (orientation: portrait) {
   .shots { grid-template-columns: repeat(2, 1fr); }
   .featured .copy { padding: 26px; }
   .featured::after { background: linear-gradient(0deg, rgba(10, 8, 9, .95) 10%, rgba(10, 8, 9, .5) 60%, transparent); }
@@ -241,6 +246,17 @@ footer.site a:hover { color: var(--text); }
   .game-hero::after, .game-hero.copy-right::after { background: linear-gradient(0deg, var(--bg) 40%, transparent 62%); }
   .game-hero .copy, .game-hero.copy-right .copy { padding-top: calc(62.5vw - 70px); margin-left: 0; }
   .game-hero .logo { width: min(320px, 72vw); }
+}
+@media (orientation: landscape) and (max-height: 560px) {
+  .game-hero { min-height: 100vh; min-height: 100svh; }
+  .game-hero .copy { padding: 84px 0 28px; max-width: 46%; }
+  .game-hero .logo { width: min(260px, 30vw); margin-bottom: 8px; }
+  .game-hero .tagline { font-size: 1rem; margin-bottom: 12px; }
+  .game-hero .chips { margin-bottom: 14px; }
+  .game-hero.from-icon .side-icon { width: min(220px, 26vw); }
+  .featured { min-height: 360px; }
+  .featured .logo { width: 200px; }
+  .studio-hero img { width: min(220px, 30vw); }
 }
 @media (max-width: 560px) {
   .wrap { padding: 0 16px; }
