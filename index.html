@@ -3,58 +3,142 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tempest Games</title>
+<title>Tempest Games | Independent game studio</title>
 <meta name="description" content="Tempest Games, an independent game studio. Makers of Hazard Pay, Wobble Shot League and Rise &amp; Bake.">
-<style>
-  :root { --ink: #15130f; --paper: #f4efe6; --accent: #a5262b; --muted: #5d574c; }
-  body { margin: 0; background: #0f0d0b; color: var(--paper); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 820px; margin: 0 auto; padding: 48px 16px 72px; }
-  .logo { width: 420px; max-width: 86%; height: auto; display: block; margin: 0 auto 8px; }
-  .tag { text-align: center; color: #c9c2b4; margin: 0 0 40px; }
-  h2 { font-size: 1.1rem; letter-spacing: .08em; text-transform: uppercase; color: #ffc21a; }
-  .game { display: flex; gap: 20px; align-items: center; background: #1c1915; border-radius: 16px; padding: 18px; }
-  .game img { width: 110px; height: 110px; border-radius: 22px; flex: none; }
-  .game h3 { margin: 0 0 4px; font-size: 1.35rem; }
-  .game p { margin: 0 0 6px; color: #d9d2c4; }
-  a { color: #ffc21a; }
-  footer { margin-top: 56px; text-align: center; color: #9a9284; font-size: .92rem; }
-  @media (max-width: 520px) { .game { flex-direction: column; text-align: center; } }
-</style>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tempest Games">
+<meta property="og:description" content="An independent game studio making games for phones, browsers and consoles.">
+<meta property="og:image" content="https://tempestgames99.github.io/assets/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0e0c0d">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="tempest-games.webp" alt="Tempest Games"></a>
+    <nav>
+      <a href="#games">Games</a>
+      <a href="#studio" class="hide-sm">Studio</a>
+      <a href="privacy-policy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-  <img class="logo" src="tempest-games.webp" alt="Tempest Games">
-  <p class="tag">An independent game studio.</p>
-
-  <h2>Games</h2>
-  <section class="game">
-    <img src="hazard-pay-icon.png" alt="Hazard Pay icon">
-    <div>
-      <h3>Hazard Pay</h3>
-      <p>A troll platformer. Three workers, 200 shifts of traps that lie. Clock out alive.</p>
+  <section class="studio-hero">
+    <div class="wrap">
+      <h1 class="sr">Tempest Games</h1>
+      <img src="assets/logo-stacked.webp" alt="Tempest Games" width="669" height="720">
+      <p>An independent game studio making games for phones, browsers and consoles.</p>
+      <a class="btn" href="#games">See our games</a>
     </div>
   </section>
 
-  <section class="game">
-    <img src="wobble-shot-league-icon.png" alt="Wobble Shot League icon">
-    <div>
-      <h3>Wobble Shot League</h3>
-      <p>Chunky shapes, real guns. Drop from the plane into a 100-shape battle royale, survive endless waves, or fight 8 v 8.</p>
+  <!-- FEATURED: one game in the spotlight (usually the newest). To change it, swap the
+       link, key art, logo, text and the three colours. See README.md. -->
+  <section class="section" style="padding-top: 8px">
+    <div class="wrap">
+      <p class="eyebrow">Coming soon</p>
+      <a class="featured" href="games/rise-and-bake/"
+         style="--c:#f39a2b; --c-on:#2a1407; --c-glow:rgba(243,154,43,.45)">
+        <img src="games/rise-and-bake/keyart.webp" alt="" width="1672" height="941">
+        <div class="copy">
+          <img class="logo" src="games/rise-and-bake/logo.webp" alt="Rise &amp; Bake: Bakery Simulator" width="760" height="504">
+          <p>A cozy first-person bakery. Knead, bake and serve with Uncle Thomson, and bring Grandma's old bakery back to life.</p>
+          <span class="btn">Discover the game</span>
+        </div>
+      </a>
     </div>
   </section>
 
-  <section class="game">
-    <img src="rise-and-bake-icon.png" alt="Rise &amp; Bake icon">
-    <div>
-      <h3>Rise &amp; Bake</h3>
-      <p>A cozy first-person bakery. Bake, stock and serve with Uncle Thomson, and bring Grandma's old bakery on Maple Lane back to life.</p>
+  <section class="section" id="games">
+    <div class="wrap">
+      <h2>Our games</h2>
+      <div class="grid">
+
+        <!-- GAME CARDS: one per game, newest first. Copy a block, see README.md "Adding a game". -->
+        <a class="card" href="games/rise-and-bake/" style="--c:#f39a2b">
+          <div class="art">
+            <span class="chip status">Coming soon</span>
+            <img src="games/rise-and-bake/card.webp" alt="" loading="lazy" width="960" height="540">
+          </div>
+          <div class="body">
+            <img class="icon" src="games/rise-and-bake/icon.webp" alt="" width="512" height="512">
+            <h3>Rise &amp; Bake</h3>
+            <p>A cozy first-person bakery. Bake, stock and serve, and bring Grandma's old bakery back to life.</p>
+            <div class="chips"><span class="chip">Cozy sim</span><span class="chip">Android</span><span class="chip">Web</span></div>
+            <span class="more">View game</span>
+          </div>
+        </a>
+
+        <a class="card" href="games/wobble-shot-league/" style="--c:#f07a2a">
+          <div class="art from-icon">
+            <img src="games/wobble-shot-league/icon.webp" alt="" loading="lazy">
+            <img src="games/wobble-shot-league/icon.webp" alt="" loading="lazy">
+          </div>
+          <div class="body">
+            <img class="icon" src="games/wobble-shot-league/icon.webp" alt="" width="512" height="512">
+            <h3>Wobble Shot League</h3>
+            <p>Chunky shapes, real guns. Drop from the plane into a 100-shape battle royale, survive endless waves, or fight 8 v 8.</p>
+            <div class="chips"><span class="chip">Shooter</span><span class="chip">Android</span></div>
+            <span class="more">View game</span>
+          </div>
+        </a>
+
+        <a class="card" href="games/hazard-pay/" style="--c:#e0a03a">
+          <div class="art from-icon">
+            <img src="games/hazard-pay/icon.webp" alt="" loading="lazy">
+            <img src="games/hazard-pay/icon.webp" alt="" loading="lazy">
+          </div>
+          <div class="body">
+            <img class="icon" src="games/hazard-pay/icon.webp" alt="" width="512" height="512">
+            <h3>Hazard Pay</h3>
+            <p>A troll platformer. Three workers, 200 shifts of traps that lie. Clock out alive.</p>
+            <div class="chips"><span class="chip">Platformer</span><span class="chip">Android</span></div>
+            <span class="more">View game</span>
+          </div>
+        </a>
+
+      </div>
     </div>
   </section>
 
-  <footer>
-    <a href="privacy-policy.html">Privacy Policy</a> ·
-    <a href="mailto:tempestg999871@gmail.com">tempestg999871@gmail.com</a>
-  </footer>
+  <section class="section" id="studio">
+    <div class="wrap about">
+      <div>
+        <p class="eyebrow">The studio</p>
+        <h2 style="font-size: clamp(2.2rem, 5vw, 3.2rem); margin-bottom: 18px">Small team. Big weather.</h2>
+        <p>Tempest Games is an independent studio. We make games that are quick to pick up and hard
+        to put down, for your phone, your browser and your console.</p>
+        <p>Questions, bug reports or business enquiries:
+        <a href="mailto:tempestg999871@gmail.com">tempestg999871@gmail.com</a></p>
+      </div>
+      <div class="pillars">
+        <div class="pillar"><strong>Play anywhere</strong><span>On Google Play and the big web game sites, with consoles on the way.</span></div>
+        <div class="pillar"><strong>Easy to pick up</strong><span>Simple controls on touch, mouse and gamepad, and plenty to master.</span></div>
+        <div class="pillar"><strong>No accounts</strong><span>Your saves live on your own device. <a href="privacy-policy.html">Privacy policy</a></span></div>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="site">
+  <div class="wrap">
+    <img src="tempest-games.webp" alt="Tempest Games">
+    <span>© 2026 Tempest Games</span>
+    <nav>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="mailto:tempestg999871@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
 </body>
 </html>

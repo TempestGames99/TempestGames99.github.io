@@ -1,0 +1,176 @@
+<!doctype html>
+<!--
+  GAME PAGE TEMPLATE. Copy this whole folder to games/<your-game-slug>/ and fill it in.
+  Full checklist: README.md, "Adding a game". Folders starting with "_" are not published,
+  so this template never shows up on the live site.
+
+  Every place to fill in is marked FILL. Anything you leave empty hides itself:
+    - store buttons with href=""   hidden (or "Coming soon to ..." when data-status="coming-soon")
+    - trailer with data-youtube="" hidden (or "Trailer coming soon" when data-status="coming-soon")
+  Delete any section you have nothing for (features, screenshots).
+
+  Files this page expects next to it (see README for sizes):
+    icon.webp      512x512 app icon                          required
+    keyart.webp    wide key art, about 1600-1920 px wide      optional (no key art? see HERO below)
+    logo.webp      game logo with a transparent background    optional (else the title is text)
+    card.webp      960x540 art for the home page card         optional
+    share.jpg      1200x630 picture shown when the link is shared
+    shots/01.webp  screenshots, 1600x900 (or 1280x720), numbered
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GAME TITLE | Tempest Games</title><!-- FILL -->
+<meta name="description" content="ONE OR TWO SENTENCE PITCH."><!-- FILL: shown by search engines -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="GAME TITLE"><!-- FILL -->
+<meta property="og:description" content="ONE SENTENCE PITCH."><!-- FILL -->
+<meta property="og:image" content="https://tempestgames99.github.io/games/SLUG/share.jpg"><!-- FILL: SLUG -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14100e"><!-- FILL: same as --bg below -->
+<link rel="icon" href="icon.webp">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- FILL (optional): a Google Font that suits the game's headings, e.g. family=Fredoka:wght@600;700 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<!--
+  FILL: the page's colours, picked from the game's own art.
+    --bg / --surface / --surface-2   a dark page tinted toward the game's palette, then two lighter steps
+    --accent / --accent-2            the game's main colour, and a lighter one for links
+    --on-accent                      text on the accent (dark for light accents, #fff for dark ones)
+    --glow                           the accent at about 35% opacity
+    --display                        heading font (must be loaded above); remove to keep Bebas Neue
+  data-status: "coming-soon" before release, "" once it is out.
+-->
+<body data-status="coming-soon" style="
+  --bg:#14100e; --surface:#201a17; --surface-2:#2a221e;
+  --accent:#d1323a; --accent-2:#ff5a4f; --on-accent:#fff; --glow:rgba(209,50,58,.35);
+  --display:'Bebas Neue', Impact, sans-serif">
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="../../"><img src="../../tempest-games.webp" alt="Tempest Games"></a>
+    <nav><a class="back" href="../../#games">← All games</a></nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO
+       With key art:    <section class="game-hero"> and the <img class="bg"> line.
+                        Add "copy-right" to the class if the art's characters are on the left.
+       Without key art: <section class="game-hero from-icon">, delete the <img class="bg"> line
+                        and keep the <img class="side-icon"> line. -->
+  <section class="game-hero">
+    <img class="bg" src="keyart.webp" alt="">
+    <!-- <img class="side-icon" src="icon.webp" alt=""> -->
+    <div class="wrap">
+      <div class="copy">
+        <!-- With a logo: keep both lines (the h1 stays for search engines and screen readers).
+             Without one: delete the <img class="logo"> and remove class="sr" from the h1. -->
+        <h1 class="sr">GAME TITLE</h1><!-- FILL -->
+        <img class="logo" src="logo.webp" alt="GAME TITLE"><!-- FILL -->
+        <p class="tagline">ONE OR TWO SENTENCE PITCH.</p><!-- FILL -->
+        <div class="chips">
+          <span class="chip status">Coming soon</span><!-- FILL: "Coming soon", "Out now", "Early access"... or delete -->
+          <span class="chip">GENRE</span><!-- FILL -->
+          <span class="chip">Android</span><!-- FILL: one chip per platform -->
+        </div>
+        <div class="actions">
+          <!-- FILL: the Google Play link once it is live. Empty = hidden / "coming soon". -->
+          <a class="btn store" href="">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 1.8 13.4 12l-9.8 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1Zm11 11.4 2.5 2.5-11.2 6.4 8.7-8.9Zm3.8-3.6 2.8 1.6c.8.5.8 1.6 0 2.1l-2.8 1.6-2.7-2.9 2.7-2.4ZM5.9 1.9l11.2 6.4-2.5 2.5-8.7-8.9Z"/></svg>
+            <span class="two"><small>Get it on</small>Google Play</span>
+          </a>
+          <!-- More stores work the same way, e.g. a web version:
+          <a class="btn store" href="https://www.crazygames.com/game/...">
+            <span class="two"><small>Play on</small>CrazyGames</span>
+          </a> -->
+          <a class="btn ghost" href="#trailer">▶ Watch trailer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="trailer">
+    <div class="wrap">
+      <!-- FILL: the YouTube link (or just its 11-character id). It plays muted, on a loop,
+           once it scrolls into view. Empty = hidden / "Trailer coming soon". -->
+      <div class="trailer" data-youtube="" data-title="GAME TITLE">
+        <img class="poster" src="keyart.webp" alt="" loading="lazy"><!-- or icon.webp without key art -->
+        <div class="soon-note"><div class="play"></div><strong>Trailer coming soon</strong><span>Keep an eye on this space.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0">
+    <div class="wrap about-game">
+      <div>
+        <p class="eyebrow">About the game</p>
+        <h2 style="font-size: clamp(2rem, 4.4vw, 3rem); margin-bottom: 18px">A SHORT HEADLINE</h2><!-- FILL -->
+        <p class="lead">THE HOOK, IN ONE OR TWO SENTENCES.</p><!-- FILL -->
+        <p>A PARAGRAPH ON HOW IT PLAYS.</p><!-- FILL: one or two paragraphs -->
+
+        <!-- FILL: 4 to 8 features (an even number fills the two columns). -->
+        <ul class="features">
+          <li><strong>FEATURE</strong>One short line about it.</li>
+          <li><strong>FEATURE</strong>One short line about it.</li>
+          <li><strong>FEATURE</strong>One short line about it.</li>
+          <li><strong>FEATURE</strong>One short line about it.</li>
+        </ul>
+      </div>
+
+      <aside class="facts">
+        <img class="icon" src="icon.webp" alt="GAME TITLE icon"><!-- FILL -->
+        <dl>
+          <dt>Developer</dt><dd>Tempest Games</dd>
+          <dt>Genre</dt><dd>GENRE</dd><!-- FILL -->
+          <dt>Platforms</dt><dd>Android</dd><!-- FILL -->
+          <dt>Players</dt><dd>Single-player</dd><!-- FILL -->
+          <dt>Release</dt><dd>Coming soon</dd><!-- FILL: a date once it is out -->
+          <dt>Privacy</dt><dd><a href="../../privacy-policy.html#SLUG">How this game uses data</a></dd><!-- FILL: SLUG -->
+        </dl>
+        <div class="actions">
+          <!-- FILL: the same store link(s) as in the hero. -->
+          <a class="btn store" href="">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 1.8 13.4 12l-9.8 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1Zm11 11.4 2.5 2.5-11.2 6.4 8.7-8.9Zm3.8-3.6 2.8 1.6c.8.5.8 1.6 0 2.1l-2.8 1.6-2.7-2.9 2.7-2.4ZM5.9 1.9l11.2 6.4-2.5 2.5-8.7-8.9Z"/></svg>
+            <span class="two"><small>Get it on</small>Google Play</span>
+          </a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="screenshots" style="padding-top: 0">
+    <div class="wrap">
+      <h2>Screenshots</h2>
+      <!-- FILL: one line per screenshot. The first one shows big; the alt text is the caption. -->
+      <div class="shots">
+        <a href="shots/01.webp"><img src="shots/01.webp" alt="CAPTION" loading="lazy"></a>
+        <a href="shots/02.webp"><img src="shots/02.webp" alt="CAPTION" loading="lazy"></a>
+        <a href="shots/03.webp"><img src="shots/03.webp" alt="CAPTION" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0; text-align: center">
+    <div class="wrap"><a class="btn ghost" href="../../#games">← See all our games</a></div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <img src="../../tempest-games.webp" alt="Tempest Games">
+    <span>© 2026 Tempest Games</span>
+    <nav>
+      <a href="../../privacy-policy.html">Privacy Policy</a>
+      <a href="mailto:tempestg999871@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+<script src="../../assets/site.js"></script>
+</body>
+</html>
