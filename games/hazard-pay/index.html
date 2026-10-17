@@ -1,50 +1,52 @@
 <!doctype html>
-<!-- Starter page: only what the studio page already said. The game's team fills in the rest
-     (store link, trailer, key art, logo, description, features, screenshots) by following
-     README.md, "Filling in a game page". games/_template/index.html shows every part. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hazard Pay | Tempest Games</title>
-<meta name="description" content="A troll platformer. Three workers, 200 shifts of traps that lie. Clock out alive.">
+<meta name="description" content="A troll platformer. Three workers, 200 shifts of traps that lie. Clock out alive. Free on Android, plays offline.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hazard Pay">
 <meta property="og:description" content="A troll platformer. Three workers, 200 shifts of traps that lie. Clock out alive.">
-<meta property="og:image" content="https://tempestgames99.github.io/games/hazard-pay/icon.webp">
+<meta property="og:image" content="https://tempestgames99.github.io/games/hazard-pay/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#15100b">
 <link rel="icon" href="icon.webp">
 <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body data-status="" style="
   --bg:#15100b; --surface:#211a13; --surface-2:#2c2319;
-  --accent:#f2b233; --accent-2:#ffd06a; --on-accent:#1d1405; --glow:rgba(242,178,51,.35)">
+  --accent:#f2b233; --accent-2:#ffd06a; --on-accent:#1d1405; --glow:rgba(242,178,51,.35);
+  --display:'Bungee', system-ui, sans-serif">
 
 <header class="bar">
   <div class="wrap">
     <a class="brand" href="../../"><img src="../../tempest-games.webp" alt="Tempest Games"></a>
-    <nav><a class="back" href="../../#games">← All games</a></nav>
+    <nav>
+      <a class="back" href="../../#games">← All games</a>
+    </nav>
   </div>
 </header>
 
 <main>
-  <section class="game-hero from-icon">
-    <img class="side-icon" src="icon.webp" alt="" width="512" height="512">
+  <section class="game-hero copy-right">
+    <img class="bg" src="keyart.webp" alt="" width="2432" height="941" style="object-position: 0% 50%">
     <div class="wrap">
       <div class="copy">
-        <h1>Hazard Pay</h1>
+        <h1 class="sr">Hazard Pay</h1>
+        <img class="logo" src="logo.webp" alt="Hazard Pay" width="760" height="658" style="width: min(210px, 50vw); height: auto">
         <p class="tagline">A troll platformer. Three workers, 200 shifts of traps that lie. Clock out alive.</p>
         <div class="chips">
+          <span class="chip status">Out now</span>
           <span class="chip">Platformer</span>
           <span class="chip">Android</span>
         </div>
         <div class="actions">
-          <!-- FILL: the Google Play link. Empty = hidden. -->
-          <a class="btn store" href="">
+          <a class="btn store" href="https://play.google.com/store/apps/details?id=com.tempest.games.hazard.pay">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 1.8 13.4 12l-9.8 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1Zm11 11.4 2.5 2.5-11.2 6.4 8.7-8.9Zm3.8-3.6 2.8 1.6c.8.5.8 1.6 0 2.1l-2.8 1.6-2.7-2.9 2.7-2.4ZM5.9 1.9l11.2 6.4-2.5 2.5-8.7-8.9Z"/></svg>
             <span class="two"><small>Get it on</small>Google Play</span>
           </a>
@@ -56,9 +58,8 @@
 
   <section class="section" id="trailer">
     <div class="wrap">
-      <!-- FILL: the YouTube link or id. Empty = hidden. -->
-      <div class="trailer" data-youtube="" data-title="Hazard Pay">
-        <img class="poster" src="icon.webp" alt="" loading="lazy">
+      <div class="trailer" data-youtube="B2BHIl-KuB4" data-title="Hazard Pay">
+        <img class="poster" src="keyart.webp" alt="" loading="lazy">
         <div class="soon-note"><div class="play"></div><strong>Trailer coming soon</strong><span>Keep an eye on this space.</span></div>
       </div>
     </div>
@@ -68,20 +69,41 @@
     <div class="wrap about-game">
       <div>
         <p class="eyebrow">About the game</p>
-        <p class="lead">A troll platformer. Three workers, 200 shifts of traps that lie. Clock out alive.</p>
-        <!-- FILL: a paragraph or two on how it plays, then the features list (see the template). -->
+        <h2 style="font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 18px">The sign says safe. The floor disagrees.</h2>
+        <p class="lead">Welcome to the worst job in the world: a factory where every room is out to get you.</p>
+        <p>Floors vanish, doors run away, and spikes pop up exactly where you were about to land.
+        Tap in and you're on your first shift straight away. Every trap has a rule you can learn,
+        every death is a punchline, and the next try is always half a second away.</p>
+        <p>Start as Cinder, the fire salamander who wall-jumps. Pick your worker after your first
+        shifts, then recruit the rest of the crew: Pip the crash-test dummy double-jumps, and
+        Rivet the robot safety inspector hovers and scans for hidden traps. Every coin you carry
+        out of a shift is your hazard pay, to spend in the Locker.</p>
+
+        <ul class="features">
+          <li><strong>200 shifts</strong>20 chapters, from gentle lies to rooms that throw everything at you at once.</li>
+          <li><strong>Three workers</strong>Wall jump, double jump or hover: each one plays differently.</li>
+          <li><strong>Traps that lie</strong>Fake floors, runaway doors and spikes with perfect timing.</li>
+          <li><strong>A skull for every death</strong>Watch the pile grow at the trap that keeps getting you.</li>
+          <li><strong>Daily rewards</strong>A box every day, three daily missions, and Overtime: three new shifts every day.</li>
+          <li><strong>The Locker</strong>Hats, skins, trails and death bursts, bought with your hazard pay.</li>
+          <li><strong>Hidden blueprints</strong>Secrets only each worker can reach, for alternate colours.</li>
+          <li><strong>Plays offline</strong>Simple touch controls: move on the left, jump on the right.</li>
+        </ul>
       </div>
 
       <aside class="facts">
         <img class="icon" src="icon.webp" alt="Hazard Pay icon" width="512" height="512">
         <dl>
           <dt>Developer</dt><dd>Tempest Games</dd>
-          <dt>Genre</dt><dd>Platformer</dd>
+          <dt>Genre</dt><dd>Troll platformer</dd>
           <dt>Platforms</dt><dd>Android</dd>
+          <dt>Players</dt><dd>Single-player</dd>
+          <dt>Controls</dt><dd>Touch</dd>
+          <dt>Release</dt><dd>October 2026</dd>
           <dt>Privacy</dt><dd><a href="../../privacy-policy.html#hazard-pay">How this game uses data</a></dd>
         </dl>
         <div class="actions">
-          <a class="btn store" href="">
+          <a class="btn store" href="https://play.google.com/store/apps/details?id=com.tempest.games.hazard.pay">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 1.8 13.4 12l-9.8 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1Zm11 11.4 2.5 2.5-11.2 6.4 8.7-8.9Zm3.8-3.6 2.8 1.6c.8.5.8 1.6 0 2.1l-2.8 1.6-2.7-2.9 2.7-2.4ZM5.9 1.9l11.2 6.4-2.5 2.5-8.7-8.9Z"/></svg>
             <span class="two"><small>Get it on</small>Google Play</span>
           </a>
@@ -90,10 +112,26 @@
     </div>
   </section>
 
-  <!-- FILL: a Screenshots section (copy it from the template). -->
+  <section class="section" id="screenshots" style="padding-top: 0">
+    <div class="wrap">
+      <h2>Screenshots</h2>
+      <div class="shots">
+        <a href="shots/01.webp"><img src="shots/01.webp" alt="Traps that blow up in your face" loading="lazy"></a>
+        <a href="shots/02.webp"><img src="shots/02.webp" alt="Pick your worker: Cinder, Pip or Rivet" loading="lazy"></a>
+        <a href="shots/03.webp"><img src="shots/03.webp" alt="Every death leaves a skull, and a quip" loading="lazy"></a>
+        <a href="shots/04.webp"><img src="shots/04.webp" alt="Your pay stub after every shift" loading="lazy"></a>
+        <a href="shots/05.webp"><img src="shots/05.webp" alt="20 chapters of rooms out to get you" loading="lazy"></a>
+        <a href="shots/06.webp"><img src="shots/06.webp" alt="Spend your hazard pay in the Locker" loading="lazy"></a>
+        <a href="shots/07.webp"><img src="shots/07.webp" alt="200 shifts to clock out of" loading="lazy"></a>
+        <a href="shots/08.webp"><img src="shots/08.webp" alt="Clock in" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
 
   <section class="section" style="padding-top: 0; text-align: center">
-    <div class="wrap"><a class="btn ghost" href="../../#games">← See all our games</a></div>
+    <div class="wrap">
+      <a class="btn ghost" href="../../#games">← See all our games</a>
+    </div>
   </section>
 </main>
 

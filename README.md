@@ -20,8 +20,7 @@ Plain HTML and CSS, no build step: edit, commit, push, and Pages republishes in 
 | `tempest-games.webp` | The wide studio logo (top bar and footer) |
 | `app-ads.txt` | AdMob's authorised-seller line for publisher `pub-1197327241056126`. Must stay at the site root |
 
-Game folders today: `rise-and-bake` (complete), `hazard-pay` and `wobble-shot-league`
-(starter pages waiting for their details: see "Filling in a game page").
+Game folders today: `rise-and-bake`, `wobble-shot-league` and `hazard-pay` (all complete).
 
 ## Adding a game
 
@@ -33,7 +32,7 @@ Game folders today: `rise-and-bake` (complete), `hazard-pay` and `wobble-shot-le
 5. **Add a card** to `index.html` under "Our games", newest first: copy an `<a class="card">` block,
    change link, pictures, title, pitch, tags and `--c` (the game's main colour). With a
    `card.webp` use `<div class="art">` (like Rise & Bake); without, `<div class="art from-icon">`
-   with the icon twice (like Hazard Pay). Add `<span class="chip status">Coming soon</span>`
+   with the icon twice. Add `<span class="chip status">Coming soon</span>`
    inside `.art` until launch.
 6. **Spotlight it** (optional): the "featured" banner on `index.html` shows one game. Change its
    link, `keyart.webp`, `logo.webp`, sentence, eyebrow text and the three colours in its `style`.
