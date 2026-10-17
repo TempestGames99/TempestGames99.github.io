@@ -153,7 +153,7 @@ h1, h2, .display { font-family: var(--display); font-weight: 400; letter-spacing
 }
 /* No key art yet: a glow in the game's colour behind its icon. */
 .game-hero.from-icon { min-height: 520px; background: radial-gradient(60% 70% at 75% 40%, color-mix(in srgb, var(--accent) 45%, transparent), transparent 70%), var(--bg); }
-.game-hero.from-icon .side-icon { position: absolute; right: 8%; top: 50%; translate: 0 -55%; width: min(340px, 34vw); border-radius: 22%; box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .8); z-index: -1; }
+.game-hero.from-icon .side-icon { position: absolute; right: 8%; top: 50%; translate: 0 -55%; width: min(340px, 34vw); height: auto; border-radius: 22%; box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .8); z-index: -1; }
 .game-hero > .wrap { width: 100%; }
 .game-hero .copy { padding: 120px 0 56px; max-width: 620px; }
 /* Key art with its characters on the left: the words go on the right instead. */
