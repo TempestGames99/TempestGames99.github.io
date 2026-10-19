@@ -1,8 +1,11 @@
-# Tempest Games website
+# Mozma Games website
 
 Served by GitHub Pages at **https://tempestgames99.github.io** from the repository
 `TempestGames99/TempestGames99.github.io`. It must stay named `TempestGames99.github.io`
-(that is what makes it the root site, which app-ads.txt needs) and public.
+(that is what makes it the root site, which app-ads.txt needs) and public. The studio was
+renamed from its first name to **Mozma Games** in October 2026; the address and the Google Play
+package names keep the old name, as neither can change, but nothing on the pages shows it.
+This README is not published (`_config.yml` excludes it).
 
 Plain HTML and CSS, no build step: edit, commit, push, and Pages republishes in a minute or two.
 
@@ -17,7 +20,7 @@ Plain HTML and CSS, no build step: edit, commit, push, and Pages republishes in 
 | `assets/site.css` | The whole look, shared by every page. Game pages re-colour it with variables, never by editing this file |
 | `assets/site.js` | Store buttons, trailer and screenshot viewer, driven entirely by the HTML |
 | `assets/` (images) | Studio favicon, stacked logo, link-preview picture |
-| `tempest-games.webp` | The wide studio logo (top bar and footer) |
+| `mozma-games.webp` | The wide studio logo (top bar and footer) |
 | `app-ads.txt` | AdMob's authorised-seller line for publisher `pub-1197327241056126`. Must stay at the site root |
 
 Game folders today: `rise-and-bake`, `wobble-shot-league` and `hazard-pay` (all complete).
@@ -101,4 +104,4 @@ git commit -m "Add <game>"
 git push origin main
 ```
 
-Commit from this folder (it has its own Tempest Games git identity), not from a game's repository.
+Commit from this folder (it has its own studio git identity), not from a game's repository.

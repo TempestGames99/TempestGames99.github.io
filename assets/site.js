@@ -1,4 +1,4 @@
-// Tempest Games: the little behaviour the pages need. Everything is driven by the HTML,
+// Mozma Games: the little behaviour the pages need. Everything is driven by the HTML,
 // so a game page never needs its own script:
 //
 //   <a class="btn store" href="">            empty href: "coming soon" (or hidden, see below)
