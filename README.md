@@ -17,6 +17,7 @@ Plain HTML and CSS, no build step: edit, commit, push, and Pages republishes in 
 | `games/<slug>/` | One folder per game: its page (`index.html`) and all of its pictures |
 | `games/_template/` | The game page to copy for a new game. Folders starting with `_` are not published |
 | `privacy-policy.html` | One privacy policy for **every** title. Each game has a note under "Game-specific notes" with `id="<slug>"` |
+| `terms-of-service.html` | One set of terms for **every** title. Each game has a short note under "Game-specific notes" with `id="<slug>"`, which gives it its own link for Play Console |
 | `assets/site.css` | The whole look, shared by every page. Game pages re-colour it with variables, never by editing this file |
 | `assets/site.js` | Store buttons, trailer and screenshot viewer, driven entirely by the HTML |
 | `assets/` (images) | Studio favicon, stacked logo, link-preview picture |
@@ -46,8 +47,14 @@ Game folders today: `rise-and-bake`, `wobble-shot-league`, `hazard-pay`, `crash-
    doesn't describe yet (another ad network or analytics provider, sign-in, cloud saves,
    multiplayer servers...), add it to the general sections and update the "Effective" date.
    The policy must always match what the games do.
-8. Add the game's name to the `<meta name="description">` of `index.html`.
-9. **Check it locally**, then **commit and push**.
+8. **Terms**: add `<h3 id="<slug>">Game name</h3><p>...</p>` under "12. Game-specific notes" in
+   `terms-of-service.html`: only what is particular to the game (ads, what it sells). The general
+   sections stay as they are unless the game does something they don't cover (accounts, servers,
+   multiplayer, subscriptions, things players create). Then change the "Effective" date. The link
+   for the game's Play Console trader confirmation is
+   `https://tempestgames99.github.io/terms-of-service.html#<slug>`.
+9. Add the game's name to the `<meta name="description">` of `index.html`.
+10. **Check it locally**, then **commit and push**.
 
 ## Filling in a game page
 
