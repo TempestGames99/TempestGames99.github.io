@@ -24,8 +24,8 @@ Plain HTML and CSS, no build step: edit, commit, push, and Pages republishes in 
 | `mozma-games.webp` | The wide studio logo (top bar and footer) |
 | `app-ads.txt` | AdMob's authorised-seller line for publisher `pub-1197327241056126`. Must stay at the site root |
 
-Game folders today: `rise-and-bake`, `wobble-shot-league`, `hazard-pay`, `crash-courier` (all complete) and
-`bistro-bash` (coming soon; its pictures are made by `ArtSource/Tools/make_site.py` in the Bistro Bash project).
+Game folders today: `rise-and-bake`, `wobble-shot-league`, `hazard-pay`, `crash-courier` and `bistro-bash`
+(all complete; Bistro Bash's pictures are made by `ArtSource/Tools/make_site.py` in the Bistro Bash project).
 
 ## Adding a game
 
