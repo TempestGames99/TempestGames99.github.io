@@ -48,7 +48,8 @@ Game folders today: `rise-and-bake`, `wobble-shot-league`, `hazard-pay`, `crash-
    multiplayer servers...), add it to the general sections and update the "Effective" date.
    The policy must always match what the games do.
 8. **Terms**: add `<h3 id="<slug>">Game name</h3><p>...</p>` under "12. Game-specific notes" in
-   `terms-of-service.html`: only what is particular to the game (ads, what it sells). The general
+   `terms-of-service.html`: only what is particular to the game (ads, what it sells). Add its name, linked
+   to its note, to the list of games at the top too: Play wants terms that name the app. The general
    sections stay as they are unless the game does something they don't cover (accounts, servers,
    multiplayer, subscriptions, things players create). Then change the "Effective" date. The link
    for the game's Play Console trader confirmation is
