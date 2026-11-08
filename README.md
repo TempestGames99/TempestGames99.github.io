@@ -26,6 +26,8 @@ Plain HTML and CSS, no build step: edit, commit, push, and Pages republishes in 
 
 Game folders today: `rise-and-bake`, `wobble-shot-league`, `hazard-pay`, `crash-courier` and `bistro-bash`
 (all complete; Bistro Bash's pictures are made by `ArtSource/Tools/make_site.py` in the Bistro Bash project).
+**Cube 4096** (slug `cube-4096`) is on Google Play with notes in the privacy policy and terms only: it gets
+its game folder, home card and `<meta name="description">` mention when the game is rebuilt to its new design.
 
 ## Adding a game
 
