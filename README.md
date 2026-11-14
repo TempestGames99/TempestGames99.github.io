@@ -24,10 +24,15 @@ Plain HTML and CSS, no build step: edit, commit, push, and Pages republishes in 
 | `mozma-games.webp` | The wide studio logo (top bar and footer) |
 | `app-ads.txt` | AdMob's authorised-seller line for publisher `pub-1197327241056126`. Must stay at the site root |
 
-Game folders today: `rise-and-bake`, `wobble-shot-league`, `hazard-pay`, `crash-courier` and `bistro-bash`
-(all complete; Bistro Bash's pictures are made by `ArtSource/Tools/make_site.py` in the Bistro Bash project).
-**Cube 4096** (slug `cube-4096`) is on Google Play with notes in the privacy policy and terms only: it gets
-its game folder, home card and `<meta name="description">` mention when the game is rebuilt to its new design.
+Game folders today: `rise-and-bake`, `wobble-shot-league`, `hazard-pay`, `crash-courier`, `bistro-bash` and
+`overload` (all complete; Bistro Bash's pictures are made by `ArtSource/Tools/make_site.py` in the Bistro Bash
+project, OVERLOAD's by `Docs/OVERLOAD/Store/make_store_assets.py` in the Cube Merger project).
+**OVERLOAD: The Merge Engine** (slug `overload`) is the game on the Google Play listing that was first published
+under another name (package `com.TempestGames.CubeMerge4096ChainMergeGame`). Its privacy and terms notes keep an
+empty `id="cube-4096"` anchor inside the OVERLOAD heading, because the build published before 1.0.4 links to that
+anchor; the privacy note ends with what those earlier versions did. OVERLOAD is a portrait game: its page puts its
+screenshots in 9:16 tiles with a small style block in its own `index.html` (the shared CSS is unchanged). Until
+1.0.4 is live on Play its page and card say "Coming soon" with empty store links.
 
 ## Adding a game
 
