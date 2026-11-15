@@ -24,9 +24,13 @@ Plain HTML and CSS, no build step: edit, commit, push, and Pages republishes in 
 | `mozma-games.webp` | The wide studio logo (top bar and footer) |
 | `app-ads.txt` | AdMob's authorised-seller line for publisher `pub-1197327241056126`. Must stay at the site root |
 
-Game folders today: `rise-and-bake`, `wobble-shot-league`, `hazard-pay`, `crash-courier`, `bistro-bash` and
-`overload` (all complete; Bistro Bash's pictures are made by `ArtSource/Tools/make_site.py` in the Bistro Bash
-project, OVERLOAD's by `Docs/OVERLOAD/Store/make_store_assets.py` in the Cube Merger project).
+Game folders today: `rise-and-bake`, `wobble-shot-league`, `hazard-pay`, `crash-courier`, `bistro-bash`,
+`overload` and `soccer-apocalypse` (all complete; Bistro Bash's pictures are made by `ArtSource/Tools/make_site.py` in the Bistro Bash
+project, OVERLOAD's by `Docs/OVERLOAD/Store/make_store_assets.py` in the Cube Merger project, Soccer Apocalypse's by
+`Tools/StoreListing/make_site_assets.py` in the Soccer Apocalypse project).
+**Soccer Apocalypse: Zombie Football Survival** (slug `soccer-apocalypse`) is a rebuilt game shipping as 2.0.0 on the
+existing Google Play listing (package `com.Tempest.Games.Soccer.Apocalypse.Zombie.Football.Survival`). Until 2.0.0 is
+live its page and card say "Coming soon" with empty store links; the link to paste is in a comment at the top of its page.
 **OVERLOAD: The Merge Engine** (slug `overload`) is the game on the Google Play listing that was first published
 under another name (package `com.TempestGames.CubeMerge4096ChainMergeGame`). Its privacy and terms notes keep an
 empty `id="cube-4096"` anchor inside the OVERLOAD heading, because the build published before 1.0.4 links to that
